@@ -1,8 +1,12 @@
 /**
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
+ * 
+ * 
  */
-exports.up = function(knex) {
+
+
+ exports.up = function(knex) {
     return knex.schema.createTable("tarif",t=>{
         t.increments("tarif_id")
         t.string("tarif_adi").notNullable();

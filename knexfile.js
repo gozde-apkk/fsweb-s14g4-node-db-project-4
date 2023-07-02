@@ -20,7 +20,8 @@ module.exports = {
       afterCreate:(conn, done) =>{
         conn.run("PRAGMA foreing_keys = ON",done);
       }
-    }
+    },
+    useNullAsDefault:true
   },
 
   
