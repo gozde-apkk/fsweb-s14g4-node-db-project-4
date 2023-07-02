@@ -16,6 +16,7 @@ module.exports = {
     seeds:{
       directory:"./data/seeds"
     },
+    useNullAsDefault:true,
     pool:{
       afterCreate:(conn, done) =>{
         conn.run("PRAGMA foreing_keys = ON",done);
